@@ -119,4 +119,4 @@ chat_session = model.start_chat(
 @app.get("/")
 async def root(input_string: str):
     response = chat_session.send_message(input_string).text
-    return {"message": response}
+    return {"message": response + "1234545342"}
